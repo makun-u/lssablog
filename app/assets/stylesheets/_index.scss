@@ -1,0 +1,296 @@
+.main-contents {
+  height: 100vh;
+  width: 100vw;
+  color: #fff;
+  animation: fadein 2s forwards;
+  animation-timing-function: ease;
+  .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    .header-image {
+      position: relative;
+      background-image:url(S.jpg); 
+      background-repeat:  no-repeat;
+      background-position: center center;               
+      width:auto;
+      min-width: 1440px;                             
+      height:160px;
+      opacity: 0.9;
+      background-size: cover;
+    }
+    .header {
+      position: absolute;
+      text-align: center;
+      display: inline-flex;
+      height: 160px;
+      width: 100vw;
+      min-width: 1440px;
+      padding-top:20px;
+      padding-bottom: 20px;
+      background-color: rgba(0,0,0,0.6);
+      &__leftbox {
+        padding-top: 20px;
+        &__title {
+          display: block;
+          font-size: 30px;
+          margin-left: 220px;
+          margin-right: 36px;
+        }
+      }
+      &__rightbox {
+        display: inline-block;
+      }
+    }
+    .center {
+      height: 100vh;
+      width: 100vw;
+      min-width: 1440px;
+      &__blog {
+        margin-bottom: 240px;
+        &__title {
+          margin-top: 220px;
+          margin-bottom: 60px; 
+          font-size: 36px;
+          color: black;
+          text-decoration: underline;
+          text-align: center;
+        }
+        &__box {
+          display: inline-flex;  
+          &-left {
+            margin-left: 300px;
+            padding-top: 10px;
+            font-size: 16px;
+            color: black;
+          }  
+        }
+        &__image {
+          margin-top: 100px;
+        }
+      }
+      &__aboutme {
+        padding-top: 220px;
+        margin-bottom: 220px;
+        &__title {
+          font-size: 36px;
+          color: black;
+          text-decoration: underline;
+          text-align: center;        
+        }
+        &-box {
+          display: inline-flex;
+        }
+      }
+      &__contact {
+        height: 100vh;
+        width: 100vw;
+        min-width: 1440px;
+        max-height: 550px;
+        &__title {
+          font-size: 36px;
+          color: black;
+          text-decoration: underline;
+          text-align: center;
+          margin-bottom: 70px;
+        }
+        &-box {
+          text-align: center;
+          &__followme {
+            font-size: 30px;
+            color: black;
+            padding-bottom: 140px;
+            font-family: fantasy;
+            &__image {
+              color: black;
+            }
+          }
+//           &__photos {
+//             display: inline-flex;
+//             &-1 {
+//               padding-right: 200px;
+//             }
+//             &-2 {
+//               padding-right: 200px;
+//             }
+//             &-3 {
+//             padding-right: 140px;
+//             }
+//           }
+        }
+      }
+    }
+
+    .footer {
+      background-image:url(iphone8IMGL7765.jpg.jpg); 
+      background-repeat:  no-repeat;
+      background-position: center center;               
+      width:auto;
+      min-width: 1440px;                             
+      height:300px;
+      opacity: 0.7;
+      margin-top: 1150px;
+      &__message {
+        color: #fff;
+        font-size: 30px;
+        margin-top: 30px;
+        margin-left: 1200px; 
+      }
+    }
+  }
+}
+
+ul#top-select {
+  display: inline-flex;
+  margin-left: 120px;
+  line-height: auto;
+  font-size: 20px;
+  color: black;
+}
+
+li.topselect {
+  margin-right: 50px;
+  margin-top: 40px;
+  color: black;
+  & a:link {
+    text-decoration: none;
+    color: #fff;
+  }
+  & a:visited {
+    text-decoration: none;
+    color: #fff;
+  }
+  & a:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  }
+}
+
+a {
+  display: inline-block;
+  transition: .3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+h3 {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 100px;
+  color: black;
+}
+
+.blog-image {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  margin-left: 800px;
+  margin-top: 20px;
+}
+
+.profile-image {
+  width: 400px;
+  height: 300px;
+  margin-left: 240px;
+  margin-top: 30px;
+}
+
+.instagram-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.center__contact-box__photo {
+  display: inline-flex;
+  margin-top: 90px;
+  padding-right: 40px;
+}
+
+#aboutme {
+  margin-bottom: 80px;
+}
+
+ul#main-title {
+  display: inline-block;
+  position: absolute;
+  width: 680px;
+  margin-left: 300px;
+  & a:link {
+    color: black;
+  }
+  & a:visited {
+    color: black;
+  }
+  & a:hover {
+    color: black;
+    opacity: 0.5;
+  }
+}
+
+#center__blog__box-left {
+  width: 600px;
+  color: black;
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.create-btn {
+  position: absolute;
+  color: gray;
+  float: right;
+  margin-left: 1090px;
+  margin-top: 260px;
+}
+
+
+.human-image {
+  position: absolute;
+  margin-left: 200px;
+  width: 150px;
+  height: 150px;
+}
+
+.pagination {
+  position: absolute;
+  margin-top: 30px;
+  font-size: 16px;
+  padding-left: 200px;
+  & a:link {
+    color: gray;
+  }
+  & a:visited {
+    color: gray;
+  }
+  & a:hover {
+    color: gray;
+    opacity: 0.5;
+  }
+}
+
+li.detail_blog {
+  color: black;
+  & a:link {
+    color: gray;
+  }
+  & a:visited {
+    color: gray;
+  }
+  & a:hover {
+    color: gray;
+    opacity: 0.5;
+  }
+}
+
+// img{
+//   max-width: 100%;
+//   height: auto;
+// }
+// .gallery{
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin: 0;
+//   padding: 0;
+// }
+// .gallery-item{
+//   flex: 1 1 33.333%;
+//   -ms-flex: 1 1 33.333%;
+// }

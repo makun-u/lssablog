@@ -1,0 +1,28 @@
+.main-contents
+  .main-wrapper
+    .header-image
+    .header
+      .header__leftbox
+        .header__leftbox__title
+          Labor and Social Security Atterney
+          %br
+          × Engineer
+      .header__rightbox
+        %ul#top-select
+          %li.topselect= link_to 'INDEX', blogs_path
+          %li.topselect= link_to 'LIST', list_blogs_path
+          %li.topselect= link_to 'INSTAGRAM', 'https://www.instagram.com/makun_0910/'
+
+    .mainblog
+      .mainblog-wrapper
+        .mainblog-wrapper__title
+          #{@blog.title}
+        .mainblog-wrapper__main
+          = safe_join(@blog.sentence.split("\n"), tag(:br))
+
+    .maindigest
+      .maindigest-wrapper
+        %p1 SUMMARY
+        .maindigest-wrapper__bullet
+          = safe_join(@blog.bullet.split("\n"), tag(:br))
+      

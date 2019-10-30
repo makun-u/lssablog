@@ -1,0 +1,6 @@
+= form_for(@blog, url: '/blogs' ) do |f|
+  .blog__create
+  = f.text_field :title, class: "title", placeholder: "title"
+  = f.text_area :sentence, class: "text", placeholder: "text"    
+  = f.text_area :bullet, class: "bullet", placeholder: "まとめ" 
+  = f.submit '作成完了', class: "complete-btn"    

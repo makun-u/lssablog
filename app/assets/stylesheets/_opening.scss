@@ -1,0 +1,54 @@
+.contents {
+  height: 100vh;
+  width: 100%;
+}
+
+.contents-black {
+  color: #fff;
+  background-color: black;
+  background-size: 100% 100%;
+  animation: fadein 2s, fadeout 2s 6s forwards;
+  animation-timing-function: linear;
+  font-size: 50px;
+  text-align: center;
+}
+
+.fadein_first {
+  padding-top: 260px;
+  color: #fff;
+  animation: fadein 4s, fadeout 2s 2s forwards;
+  animation-timing-function: ease;
+}
+
+.fadein_second {
+  padding-top: 20px;
+  color: #fff;
+  animation: fadein 4s, fadeout 2s 3s forwards;
+  animation-timing-function: ease;
+}
+
+.fadein_last {
+  padding-top: 20px;
+  padding-bottom: 360px;
+  color: #fff;
+  animation: fadein 4s, fadeout 2s 4s forwards;
+  animation-timing-function: ease;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

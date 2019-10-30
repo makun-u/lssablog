@@ -1,0 +1,25 @@
+.main-contents
+  .main-wrapper
+    .header-image
+    .header
+      .header__leftbox
+        .header__leftbox__title
+          Labor and Social Security Atterney
+          %br
+          × Engineer
+      .header__rightbox
+        %ul#top-select
+          %li.topselect= link_to 'INDEX', blogs_path
+          %li.topselect= link_to 'INSTAGRAM', 'https://www.instagram.com/makun_0910/'
+    .list-contents
+      .list-contents-wrapper
+        = image_tag "https://cdn.pixabay.com/photo/2013/07/12/19/21/cabaret-154609__480.png", class: "list-image"
+        .list-contents-wrapper__title
+          - @blogs.each do |blog|
+            %li#bloglist
+              = blog[:created_at].strftime("%Y/%m/%d") 
+              = link_to "　　#{blog.title}", blog_path(blog.id), method: :get, class: "detail_blog"
+        = paginate(@blogs)
+-#     .footer__list
+-#       .footer__list__message
+-#         thanks!
